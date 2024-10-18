@@ -3,14 +3,15 @@ import Image from "next/image";
 import hackathonPic from "@/public/hackathon logo.png";
 import VikshaIcon from "@/public/viksha_logo.png";
 import NeuralNexusIcon from "@/public/neural_nexus_logo.png";
+import NeuralNexusLightIcon from "@/public/neural_nexus_inverted.png";
 import IEEELogo from "@/public/ieee_logo.png";
-import EnterLogo from "@/public/enter.png";
 import { Button } from "./ui/button";
-import { FaceIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
-
 import * as React from "react";
+import { ModeToggle } from "./ModeToggle";
+import { useTheme } from "next-themes";
 
 function Navbar() {
+  const { theme, setTheme } = useTheme();
   return (
     <header className="sticky top-0 z-50 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
@@ -39,14 +40,21 @@ function Navbar() {
           </a>
           <a href="#" className="px-3">
             <Image
-              src={NeuralNexusIcon}
+              src={
+                theme == "dark"
+                  ? NeuralNexusIcon
+                  : theme == "system"
+                  ? NeuralNexusIcon
+                  : NeuralNexusLightIcon
+              }
               alt="neural_nexus_icon"
               height={30}
               width={60}
             />
           </a>
 
-          <nav className="flex items-center px-5">
+          <nav className="flex items-center pr-3 space-x-2">
+            <ModeToggle />
             <Button>Login</Button>
           </nav>
         </div>
