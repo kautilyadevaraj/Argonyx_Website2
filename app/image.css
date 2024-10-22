@@ -1,0 +1,7 @@
+body {
+  background-image: url('../public/tech_background.jpg');
+  background-size: cover;  /* Ensures the image covers the screen */
+  background-position: center;
+  background-attachment: fixed;  /* Keeps the image fixed while scrolling */
+  margin: 0;  /* Removes default margin */
+}
