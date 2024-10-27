@@ -12,12 +12,12 @@ import FadeInSection from "@/components/FadeInSection";
 
 export default function Home() {
   return (
-    <div className="p-0 m-0 min-w-screen min-h-screen flex flex-col justify-between items-center container overflow-x-hidden">
+    <div className="p-0 m-0 min-w-screen min-h-screen flex flex-col justify-between **w-full** overflow-x-hidden">
       {/* Navbar */}
       <Navbar />
       <FadeInSection>
         <div
-          className="min-h-[60vh]  flex flex-col justify-evenly items-center w-full"
+          className="min-h-[60vh]  flex flex-col justify-start items-center w-full"
           style={{ backgroundImage: "url('/path-to-your-image.png')" }}
         >
           {/* Logo and Title */}
@@ -134,7 +134,7 @@ export default function Home() {
       </FadeInSection>
       {/* Schedule Section */}
       <FadeInSection>
-        <div className="w-fit flex flex-col items-center justify-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/70">
+        <div className="w-full flex flex-col items-center justify-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/70">
           <h2 className="text-2xl md:text-3xl font-semibold mb-6">Schedule</h2>
 
           <div className="w-fit">

@@ -43,6 +43,7 @@ export const TimelineLayout = ({ items }: TimelineLayoutProps) => {
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
+      <TimelineConnector />
         <TimelineHeader>
           <TimelineTime>{items[2].date}</TimelineTime>
           <TimelineIcon />
