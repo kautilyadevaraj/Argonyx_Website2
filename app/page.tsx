@@ -9,7 +9,7 @@ import { timelineData} from "@/components/data";
 
 export default function Home() {
   return (
-    <div className="p-0 m-0 min-w-full min-h-screen flex flex-col justify-between items-center container overflow-x-hidden">
+    <div className="p-0 m-0 min-w-screen min-h-screen flex flex-col justify-between items-center container overflow-x-hidden">
       {/* Navbar */}
       <Navbar />
 
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
 
           {/* Registration Info */}
-          <div className="flex-1 h-min md:w-1/4 flex flex-col p-4 m-5  md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45 p-5 rounded-lg m-2 md:m-5 space-y-3">
+          <div className="flex-1 h-min md:w-1/4 flex flex-col p-4 m-5  md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/70 p-5 rounded-lg m-2 md:m-5 space-y-3">
             <div className="w-full flex justify-evenly items-center pr-3">
               <Image
                 src={PeopleIcon}
@@ -67,7 +67,7 @@ export default function Home() {
       {/* About and Sponsors Section */}
       <div className="flex flex-wrap justify-between w-full">
         {/* About Section */}
-        <div className="md:w-2/3 flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45">
+        <div className="md:w-2/3 flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/70">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
             About ARGONYX
           </h2>
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
 
         {/* Sponsors Section */}
-        <div className="flex-1 md:w-1/4 flex flex-col p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45 min-h-[300px]">
+        <div className="flex-1 md:w-1/4 flex flex-col p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/70 min-h-[300px]">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Sponsors</h2>
           <div className="flex-grow flex flex-col ">
             <div className="space-y-4">
@@ -112,7 +112,7 @@ export default function Home() {
       </div>
 
       {/* Schedule Section */}
-      <div className="w-fit flex flex-col items-center justify-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45">
+      <div className="w-fit flex flex-col items-center justify-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/70">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">Schedule</h2>
 
         <div className="w-fit">
@@ -122,7 +122,7 @@ export default function Home() {
 
       {/* Prizes Section */}
       <div className="w-full">
-        <div className="flex flex-col p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45 ">
+        <div className="flex flex-col p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/70">
           <div className="grid grid-cols-1 ">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">Prizes</h2>
             <ul className="space-y-4 text-center">

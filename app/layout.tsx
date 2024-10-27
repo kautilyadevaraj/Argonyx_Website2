@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} max-w-max`}
+        className={`${geistSans.variable} ${geistMono.variable} w-full`}
       >
         <ThemeProvider
           attribute="class"
