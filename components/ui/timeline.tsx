@@ -1,13 +1,12 @@
 import * as React from "react";
 
-
 import { cn } from "@/lib/utils";
 
 const Timeline = React.forwardRef<
   HTMLOListElement,
   React.HTMLAttributes<HTMLOListElement>
 >(({ className, ...props }, ref) => (
-  <ol ref={ref} className={cn("flex flex-row", className)} {...props} />
+  <ol ref={ref} className={cn("flex flex-col", className)} {...props} />
 ));
 Timeline.displayName = "Timeline";
 
@@ -17,7 +16,7 @@ const TimelineItem = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <li
     ref={ref}
-    className={cn("relative flex flex-col p-6 h-f pt-0 [&>*]:mb-3", className)}
+    className={cn("relative flex flex-col p-6 pt-0 [&>*]:mb-3", className)}
     {...props}
   />
 ));
@@ -30,14 +29,13 @@ const TimelineTime = React.forwardRef<
   <p
     ref={ref}
     className={cn(
-      "absolute mt-9 ml-7 text-sm leading-none text-secondary-foreground", // Positioned directly under title
+      "absolute pl-7 pt-1 translate-y-full text-sm font-semibold leading-none text-secondary-foreground", // Positioned below the header
       className
     )}
     {...props}
   />
 ));
 TimelineTime.displayName = "TimelineTime";
-
 
 const TimelineConnector = React.forwardRef<
   HTMLDivElement,
@@ -60,7 +58,7 @@ const TimelineHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex text-lg items-center gap-4", className)}
+    className={cn("flex items-center gap-4", className)}
     {...props}
   />
 ));
@@ -101,7 +99,7 @@ const TimelineDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn("text-sm pt-2 pl-1.5 text-muted-foreground max-w-sm", className)}
+    className={cn("text-sm pl-1.5 text-muted-foreground max-w-sm", className)}
     {...props}
   />
 ));
@@ -113,7 +111,7 @@ const TimelineContent = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex flex-col items-start p-6 pt-0", className)}
+    className={cn("flex flex-col items-start p-6 pt-3", className)}
     {...props}
   />
 ));
