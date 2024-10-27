@@ -10,8 +10,8 @@ import * as React from "react";
 
 function Navbar() {
   return (
-    <div className="container flex h-14 max-w-screen-2xl items-center">
-      <div className="flex flex-1 items-center space-x-2">
+    <div className="container flex h-14 max-w-screen-2xl items-center pt-2">
+      <div className="flex justify-evenly md:justify-start items-center space-x-2 w-full">
         <a href="#" className="px-3">
           <Image src={VikshaIcon} alt="viksha_icon" height={50} width={80} />
         </a>
