@@ -5,7 +5,7 @@ import CalenderIcon from "@/public/calender.png";
 import ArgonyxLogo from "@/public/argonyx_logo.png";
 import Image from "next/image";
 import { TimelineLayout } from "@/components/HackathonTimeline";
-import { timelineData, TimelineData } from "@/components/data";
+import { timelineData} from "@/components/data";
 
 export default function Home() {
   return (
@@ -30,32 +30,32 @@ export default function Home() {
 
           {/* Registration Info */}
           <div className="flex-1 h-min md:w-1/4 flex flex-col p-4 m-5  md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45 p-5 rounded-lg m-2 md:m-5 space-y-3">
-            <div className="w-full grid grid-cols-2 justify-items-center">
+            <div className="w-full flex justify-evenly items-center pr-3">
               <Image
                 src={PeopleIcon}
                 alt="people_icon"
                 height={40}
                 width={70}
               />
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-start justify-between pl-4">
                 <div>Registered</div>
-                <div>100</div>
+                <div className="flex w-full justify-center">100</div>
               </div>
             </div>
 
-            <div className="w-full grid grid-cols-2 justify-items-center">
+            <div className="w-full flex justify-evenly pl-6">
               <Image src={CalenderIcon} alt="calendar" height={40} width={70} />
-              <div className="flex flex-col items-center">
-                <div>Registration Deadline</div>
-                <div>10th Nov 2024</div>
+              <div className="flex flex-col justify-center items-start">
+                <div className="flex flex-nowrap">Registration Deadline</div>
+                <div className="flex w-full justify-center">10th Nov 2024</div>
               </div>
             </div>
 
-            <div className="w-full grid grid-cols-2 justify-items-center">
+            <div className="w-full flex justify-evenly">
               <Image src={CalenderIcon} alt="calendar" height={40} width={70} />
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col justify-center items-start">
                 <div>Event Deadline</div>
-                <div>10th Nov 2024</div>
+                <div className="flex w-full justify-center">10th Nov 2024</div>
               </div>
             </div>
 
