@@ -4,10 +4,12 @@ import PeopleIcon from "@/public/people_icon.png";
 import CalenderIcon from "@/public/calender.png";
 import ArgonyxLogo from "@/public/argonyx_logo.png";
 import Image from "next/image";
+import { TimelineLayout } from "@/components/HackathonTimeline";
+import { timelineData, TimelineData } from "@/components/data";
 
 export default function Home() {
   return (
-    <div className="p-0 m-0 min-w-full min-h-screen container overflow-x-hidden">
+    <div className="p-0 m-0 min-w-full min-h-screen flex flex-col justify-between items-center container overflow-x-hidden">
       {/* Navbar */}
       <Navbar />
 
@@ -110,37 +112,27 @@ export default function Home() {
       </div>
 
       {/* Schedule Section */}
-      <div className="w-max-max flex flex-col p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45">
+      <div className="w-fit flex flex-col items-center justify-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">Schedule</h2>
 
-        <div className="relative flex flex-col space-y-8 pl-8">
-          <div className="absolute left-5 top-4 h-[95%] w-0.5 bg-gray-300"></div>
-          <div className="flex items-center space-x-4">
-            <div className="w-3.5 h-3.5 bg-gray-500 rounded-full"></div>
-            <p className="text-lg"> Registration</p>
-          </div>
-
-          <div className="flex items-center space-x-4">
-            <div className="w-3.5 h-3.5 bg-gray-500 rounded-full"></div>
-            <p className="text-lg"> Round 1 (Online)</p>
-          </div>
-
-          <div className="flex items-center space-x-4">
-            <div className="w-3.5 h-3.5 bg-gray-500 rounded-full"></div>
-            <p className="text-lg"> Round 2 (Offline)</p>
-          </div>
+        <div className="w-fit">
+          <TimelineLayout items={timelineData} />
         </div>
       </div>
 
       {/* Prizes Section */}
-      <div className="w-max-max flex flex-col p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45 ">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Prizes</h2>
-        <div className="flex-grow flex flex-col ">
-          <ul className="space-y-4 text-center">
-            <li className="flex items-center">🥇 Winner: ₹50,000</li>
-            <li className="flex items-center">🥈 First Runner Up: ₹20,000</li>
-            <li className="flex items-center">🥉 Second Runner Up: ₹10,000</li>
-          </ul>
+      <div className="w-full">
+        <div className="flex flex-col p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-custom-bg/45 ">
+          <div className="grid grid-cols-1 ">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4">Prizes</h2>
+            <ul className="space-y-4 text-center">
+              <li className="flex items-center">🥇 Winner: ₹50,000</li>
+              <li className="flex items-center">🥈 First Runner Up: ₹20,000</li>
+              <li className="flex items-center">
+                🥉 Second Runner Up: ₹10,000
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
