@@ -7,7 +7,7 @@ const Timeline = React.forwardRef<
   HTMLOListElement,
   React.HTMLAttributes<HTMLOListElement>
 >(({ className, ...props }, ref) => (
-  <ol ref={ref} className={cn("flex flex-col", className)} {...props} />
+  <ol ref={ref} className={cn("flex flex-row", className)} {...props} />
 ));
 Timeline.displayName = "Timeline";
 

@@ -11,9 +11,6 @@ import { timelineData } from "@/components/data";
 import FadeInSection from "@/components/FadeInSection";
 
 
-
-
-
 export default function Home() {
   return (
     <div className="p-0 m-0 min-w-screen min-h-screen flex flex-col justify-between **w-full** overflow-x-hidden">
@@ -21,7 +18,7 @@ export default function Home() {
       <Navbar />
       <FadeInSection>
         <div
-          className="min-h-[60vh]  flex flex-col justify-evenly items-center w-full"
+          className="min-h-[60vh]  flex flex-col justify-start items-center w-full"
           style={{ backgroundImage: "url('/path-to-your-image.png')" }}
         >
           {/* Logo and Title */}
