@@ -40,6 +40,7 @@ export default function Home() {
                   alt="people_icon"
                   height={40}
                   width={70}
+                  style={{ filter: 'invert(50%) brightness(180%)' }}
                 />
                 <div className="flex flex-col items-start justify-between pl-4">
                   <div>Registered</div>
@@ -53,6 +54,7 @@ export default function Home() {
                   alt="calendar"
                   height={40}
                   width={70}
+                  style={{ filter: 'invert(50%) brightness(180%)' }}
                 />
                 <div className="flex flex-col justify-center items-start">
                   <div className="flex flex-nowrap">Registration Deadline</div>
@@ -68,6 +70,7 @@ export default function Home() {
                   alt="calendar"
                   height={40}
                   width={70}
+                  style={{ filter: 'invert(50%) brightness(180%)' }}
                 />
                 <div className="flex flex-col justify-center items-start">
                   <div>Event Deadline</div>
