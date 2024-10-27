@@ -1,24 +1,45 @@
 export const timelineData = [
   {
     id: 1,
-    title: "First event",
-    date: "2022-01-01",
+    title: "Registrations Close",
+    date: "8th November at 11:59 PM",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio euismod lacinia at quis risus sed vulputate odio ut. Quam viverra orci sagittis eu volutpat odio facilisis mauris.",
+      "This is the final deadline for participants to register. Anyone interested in participating must complete their registration by this date. No further entries will be accepted after midnight on the 8th.",
   },
   {
     id: 2,
-    title: "Second event",
-    date: "2022-02-01",
+    title: "Problem Statement Release",
+    date: "9th November at 10:00 AM",
     description:
-      "Aut eius excepturi ex recusandae eius est minima molestiae. Nam dolores iusto ad fugit reprehenderit hic dolorem quisquam et quia omnis non suscipit nihil sit libero distinctio. Ad dolorem tempora sit nostrum voluptatem qui tempora unde? Sit rerum magnam nam ipsam nesciunt aut rerum necessitatibus est quia esse non magni quae.",
+      "The 1st round begins with the release of the problem statement. Participants can start working on their solutions from this time.",
   },
   {
     id: 3,
-    title: "Third event",
-    date: "2022-03-01",
+    title: "Submission Deadline (PPT)",
+    date: "10th November at 12:00 PM",
     description:
-      "Sit culpa quas ex nulla animi qui deleniti minus rem placeat mollitia. Et enim doloremque et quia sequi ea dolores voluptatem ea rerum vitae. Aut itaque incidunt est aperiam vero sit explicabo fuga id optio quis et molestiae nulla ex quae quam. Ab eius dolores ab tempora dolorum eos beatae soluta At ullam placeat est incidunt cumque.",
+      "Participants need to submit their solution in the form of a PowerPoint presentation (PPT) by noon. This is the cutoff for all submissions for the first round. Submissions after this time won’t be accepted for evaluation.",
+  },
+  {
+    id: 4,
+    title: "Selected Teams Announced",
+    date: "13th November",
+    description:
+      "The top 15 teams from each track, advancing to the next round will be announced. Only shortlisted teams will be eligible to participate in the subsequent phases of the competition.",
+  },
+  {
+    id: 5,
+    title: "Selected Teams Registration",
+    date: "13th to 15th November",
+    description:
+      "Shortlisted teams confirm their participation in the final round by registering within this period.",
+  },
+  {
+    id: 6,
+    title: "Offline Hackathon",
+    date: "16th November and 17th November",
+    description:
+      "The final hackathon round is conducted in person and spans over 24 hours. During this time, teams will work intensively on their projects and present their solutions by the end of the session.",
   },
 ];
 
