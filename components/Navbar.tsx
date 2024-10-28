@@ -13,11 +13,15 @@ function Navbar() {
   return (
     <div className="container flex h-14 max-w-screen-2xl items-center pt-2">
       <div className="flex justify-evenly md:justify-start items-center space-x-2 w-full">
-        <a href="#" className="px-3">
+        <a href="https://rvu.edu.in/" target="_blank" className="px-3">
           <Image src={RvuLogo} alt="rvu_icon" height={100} width={140} />
         </a>
         <div className="w-full flex md:justify-end items-center">
-          <a href="#" className="md:px-3">
+          <a
+            href="https://www.instagram.com/viksha_rvu"
+            target="_blank"
+            className="md:px-3"
+          >
             <Image
               src={VikshaIcon}
               alt="viksha_icon"
@@ -26,11 +30,15 @@ function Navbar() {
             />
           </a>
           <Image src={XLogo} alt="x" height={10} width={30} />
-          <a href="#" className="md:px-3">
+          <a href="https://www.instagram.com/ieee.rvu" target="_blank" className="md:px-3">
             <Image src={IEEELogo} alt="iee_icon" height={80} width={80} />
           </a>
           <Image src={XLogo} alt="x" height={10} width={30} />
-          <a href="#" className="md:px-3">
+          <a
+            href="https://www.instagram.com/neuralnexus_rvu"
+            target="_blank"
+            className="md:px-3"
+          >
             <Image
               src={NeuralNexusIcon}
               alt="neural_nexus_icon"

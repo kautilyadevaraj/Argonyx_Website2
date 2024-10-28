@@ -198,10 +198,10 @@ export default function Home() {
                     <Image
                       src={Sponsor1}
                       alt="sponsor1"
-                      height={80}
-                      width={80}
+                      height={100}
+                      width={100}
                     />
-                    <span>Sponsor Name</span>
+                    <span className="text-xl">ASTRAEA RESEARCH</span>
                   </div>
                 </div>
               </div>
