@@ -2,7 +2,6 @@
 import * as React from "react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
-import PeopleIcon from "@/public/people_icon.png";
 import CalenderIcon from "@/public/calender.png";
 import ArgonyxLogo from "@/public/argonyx_logo.png";
 import Image from "next/image";
@@ -17,7 +16,7 @@ export default function Home() {
       <Navbar />
       <FadeInSection>
         <div
-          className="min-h-[60vh]  flex flex-col justify-start items-center w-full"
+          className="h-fit flex flex-col justify-start items-center w-full"
           style={{ backgroundImage: "url('/path-to-your-image.png')" }}
         >
           {/* Logo and Title */}
