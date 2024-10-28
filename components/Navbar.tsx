@@ -31,7 +31,7 @@ function Navbar() {
           </a>
           <Image src={XLogo} alt="x" height={10} width={30} />
           <a href="https://www.instagram.com/ieee.rvu" target="_blank" className="md:px-3">
-            <Image src={IEEELogo} alt="iee_icon" height={80} width={80} />
+            <Image src={IEEELogo} alt="iee_icon" height={120} width={180} />
           </a>
           <Image src={XLogo} alt="x" height={10} width={30} />
           <a
