@@ -79,16 +79,14 @@ export default function Home() {
                 <p className="text-center">
                   Welcome to Argonyx Hackathon 2024! <br />
                   <br />
-                  Dive into an exciting, two-round competition designed to push
-                  the boundaries of innovation and creativity. Whether
-                  you&apos;re a coding enthusiast or a problem-solving
-                  visionary, Argonyx is the ultimate platform to showcase your
-                  skills, connect with like-minded individuals, and make an
-                  impact. <br />
-                  <br />
-                  The hackathon features an initial round where you&apos;ll
-                  present your ideas, and top teams will advance to an intensive
-                  24-hour offline hackathon to bring their solutions to life!
+                  Argonyx is a national-level hackathon, structured as a
+                  two-round competition that pushes the boundaries of innovation
+                  and creativity. <br /><br />Whether you're a coding enthusiast or a
+                  problem-solving visionary, Argonyx is the ultimate platform to
+                  showcase your skills, connect with like-minded individuals,
+                  and make an impact. <br /><br />In the first round, you'll present your
+                  ideas, and top teams will advance to an intensive 24-hour
+                  offline hackathon to bring their solutions to life!
                 </p>
               </div>
             </div>
@@ -136,59 +134,55 @@ export default function Home() {
         {/*Guidelines*/}
         <FadeInSection>
           <div className="flex flex-wrap w-full">
-            
-              <div className="flex flex-col md:w-1/2 justify-start pl-10 p-4 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
-                <h2 className="text-3xl font-semibold text-center">Guidelines</h2>
+            <div className="flex flex-col md:w-1/2 justify-start pl-10 p-4 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+              <h2 className="text-3xl font-semibold text-center">Guidelines</h2>
 
-                <div className="flex space-x-2">
-                  <h3 className="font-semibold">Eligibility:</h3>
-                  <p>Open to all undergraduate students.</p>
-                </div>
-
-                <div className="flex flex-col space-y-2">
-                  <h3 className="font-semibold">Team Composition:</h3>
-                  <ul className="list-disc pl-4">
-                    <li className="flex items-center">
-                      <h4 className="font-semibold mr-1">
-                        Inter-college teams:
-                      </h4>{" "}
-                      Allowed
-                    </li>
-                    <li className="flex items-center">
-                      <h4 className="font-semibold mr-1">
-                        Inter-specialization teams:
-                      </h4>{" "}
-                      Allowed
-                    </li>
-                    <li className="flex items-center">
-                      <h4 className="font-semibold mr-1">Team Size:</h4> 2-4
-                      members
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="flex space-x-2">
-                  <h3 className="font-semibold">Format:</h3>
-                  <p>Team participation is required.</p>
-                </div>
-
-                <div className="flex flex-col space-y-2">
-                  <h3 className="font-semibold">Rounds:</h3>
-                  <ul className="list-disc pl-5">
-                    <li className="flex flex-wrap items-center">
-                      <h4 className="font-semibold mr-1">Round 1:</h4> Online
-                      submission of solutions based on provided problem
-                      statements.
-                    </li>
-                    <li className="flex flex-wrap items-center">
-                      <h4 className="font-semibold mr-1">Round 2:</h4> Offline
-                      hackathon for shortlisted teams in each track, lasting 24
-                      hours.
-                    </li>
-                  </ul>
-                </div>
+              <div className="flex space-x-2">
+                <h3 className="font-semibold">Eligibility:</h3>
+                <p>Open to all undergraduate students.</p>
               </div>
-            
+
+              <div className="flex flex-col space-y-2">
+                <h3 className="font-semibold">Team Composition:</h3>
+                <ul className="list-disc pl-4">
+                  <li className="flex items-center">
+                    <h4 className="font-semibold mr-1">Inter-college teams:</h4>{" "}
+                    Allowed
+                  </li>
+                  <li className="flex items-center">
+                    <h4 className="font-semibold mr-1">
+                      Inter-specialization teams:
+                    </h4>{" "}
+                    Allowed
+                  </li>
+                  <li className="flex items-center">
+                    <h4 className="font-semibold mr-1">Team Size:</h4> 2-4
+                    members
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex space-x-2">
+                <h3 className="font-semibold">Format:</h3>
+                <p>Team participation is required.</p>
+              </div>
+
+              <div className="flex flex-col space-y-2">
+                <h3 className="font-semibold">Rounds:</h3>
+                <ul className="list-disc pl-5">
+                  <li className="flex flex-wrap items-center">
+                    <h4 className="font-semibold mr-1">Round 1:</h4> Online
+                    submission of solutions based on provided problem
+                    statements.
+                  </li>
+                  <li className="flex flex-wrap items-center">
+                    <h4 className="font-semibold mr-1">Round 2:</h4> Offline
+                    hackathon for shortlisted teams in each track, lasting 24
+                    hours.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
             {/* Sponsors Section */}
             <div className="flex-1 h-fit flex flex-col md:w-1/2 items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
