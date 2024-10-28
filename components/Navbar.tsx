@@ -14,7 +14,7 @@ function Navbar() {
     <div className="container flex h-14 max-w-screen-2xl items-center pt-2">
       <div className="flex justify-evenly md:justify-start items-center space-x-2 w-full">
         <a href="https://rvu.edu.in/" target="_blank" className="px-3">
-          <Image src={RvuLogo} alt="rvu_icon" height={100} width={140} />
+          <Image src={RvuLogo} alt="rvu_icon" height={90} width={130} />
         </a>
         <div className="w-full flex md:justify-end items-center">
           <a
