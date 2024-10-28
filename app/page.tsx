@@ -10,7 +10,6 @@ import { TimelineLayout } from "@/components/HackathonTimeline";
 import { timelineData } from "@/components/data";
 import FadeInSection from "@/components/FadeInSection";
 
-
 export default function Home() {
   return (
     <div className="p-0 m-0 min-w-screen min-h-screen flex flex-col justify-between **w-full** overflow-x-hidden">
@@ -35,22 +34,6 @@ export default function Home() {
             {/* Registration Info */}
 
             <div className="flex-1 h-min md:w-1/4 flex flex-col p-4 m-5  md:p-5 rounded-lg m-2 md:m-5 space-y-3  p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
-              <div className="w-full flex justify-evenly items-center pr-3">
-                <Image
-                  src={PeopleIcon}
-                  alt="people_icon"
-                  height={40}
-                  width={70}
-                  style={{ filter: "invert(50%) brightness(180%)" }}
-                />
-                <div className="flex flex-col items-start justify-between pl-4">
-                  <div className="text-2xl md:text-xl">Registered</div>
-                  <div className="flex w-full justify-center text-xl md:text-lg">
-                    100
-                  </div>
-                </div>
-              </div>
-
               <div className="w-full flex justify-evenly pl-6">
                 <Image
                   src={CalenderIcon}
@@ -60,10 +43,8 @@ export default function Home() {
                   style={{ filter: "invert(50%) brightness(180%)" }}
                 />
                 <div className="flex flex-col justify-center items-start">
-                  <div className="flex text-2xl md:text-xl">
-                    Registration Deadline
-                  </div>
-                  <div className="flex w-full justify-center text-xl md:text-lg">
+                  <div className="flex text-xl">Registration Deadline</div>
+                  <div className="flex w-full justify-center text-lg">
                     8th Nov 2024
                   </div>
                 </div>
@@ -103,7 +84,7 @@ export default function Home() {
             </div>
             {/*Tracks and Problems*/}
             <div className="flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
-              <h2 className="text-2xl md:text-3xl font-semibold flex justify-center">
+              <h2 className="text-2xl md:text-3xl font-semibold flex justify-center text-center">
                 Tracks & Problem Statements
               </h2>
               <div className="flex-grow flex flex-col justify-center items-center">
@@ -113,8 +94,8 @@ export default function Home() {
                   domains:
                 </p>
                 <ul className="flex flex-col justify-center items-center pt-4 text-lg md:text-xl">
-                  <li>AI/ML</li>
-                  <li>Web Development</li>
+                  <li className="font-semibold">AI/ML</li>
+                  <li className="font-semibold">Web Development</li>
                 </ul>
                 <p className="text-center pt-4">
                   Details about the problem statements will be available upon
@@ -127,20 +108,18 @@ export default function Home() {
         {/*Guidelines*/}
         <FadeInSection>
           <div className="flex flex-wrap md:flex-nowrap w-full">
-            <div className="flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
-              <h2 className="text-2xl md:text-3xl font-semibold flex justify-center">
-                Guidelines
-              </h2>
-              <div className="flex-grow flex">
-                <h3 className="font-semibold mr-2">Eligibility: </h3>
+            <div className="flex flex-col justify-center items-center p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
+              <h2 className="text-2xl md:text-3xl font-semibold">Guidelines</h2>
+              <div className="flex-grow flex flex-col pr-4">
+                <h3 className="font-semibold ">Eligibility: </h3>
 
                 <p>Open to all undergraduate students.</p>
               </div>
 
               <div className="flex-grow flex flex-col justify-center">
-                <h3 className="font-semibold mr-2">Team Composition: </h3>
+                <h3 className="font-semibold">Team Composition: </h3>
 
-                <ul className="list-disc pl-5">
+                <ul className="list-disc pl-4">
                   <li className="flex items-center">
                     <h4 className="font-semibold mr-1">Inter-college teams:</h4>{" "}
                     Allowed
@@ -163,7 +142,7 @@ export default function Home() {
                 <p>Team participation is required.</p>
               </div>
               <div className="flex-grow flex flex-col justify-center">
-                <h3 className="font-semibold mr-2">Rounds:</h3>
+                <h3 className="font-semibold ml-2">Rounds:</h3>
 
                 <ul className="list-disc pl-5">
                   <li className="flex flex-wrap items-center">
@@ -222,10 +201,10 @@ export default function Home() {
       {/* Prizes Section */}
       <FadeInSection>
         <div className="flex flex-col md:items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-            What&apos;s at Stake - Rewards and Prizes:
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">
+            What&apos;s at Stake - Rewards and Prizes
           </h2>
-          <p className="pb-3">
+          <p className="pb-3 text-center">
             Each track will have rewards for the top three teams of each track:
           </p>
           <ul className="space-y-4 text-center flex flex-col items-center">
@@ -233,7 +212,7 @@ export default function Home() {
             <li className="flex items-center">🥈 First Runner Up: ₹6,000</li>
             <li className="flex items-center">🥉 Second Runner Up: ₹4,000</li>
           </ul>
-          <p className="pt-3">
+          <p className="pt-3 text-center">
             Participation certificate for all the participants who make a
             submission <br />
             Get in touch in amazing startups!
