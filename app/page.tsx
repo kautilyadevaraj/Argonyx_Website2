@@ -81,12 +81,16 @@ export default function Home() {
                   <br />
                   Argonyx is a national-level hackathon, structured as a
                   two-round competition that pushes the boundaries of innovation
-                  and creativity. <br /><br />Whether you're a coding enthusiast or a
-                  problem-solving visionary, Argonyx is the ultimate platform to
-                  showcase your skills, connect with like-minded individuals,
-                  and make an impact. <br /><br />In the first round, you'll present your
-                  ideas, and top teams will advance to an intensive 24-hour
-                  offline hackathon to bring their solutions to life!
+                  and creativity. <br />
+                  <br />
+                  Whether you&apos;re a coding enthusiast or a problem-solving
+                  visionary, Argonyx is the ultimate platform to showcase your
+                  skills, connect with like-minded individuals, and make an
+                  impact. <br />
+                  <br />
+                  In the first round, you&apos;ll present your ideas, and top
+                  teams will advance to an intensive 24-hour offline hackathon
+                  to bring their solutions to life!
                 </p>
               </div>
             </div>
