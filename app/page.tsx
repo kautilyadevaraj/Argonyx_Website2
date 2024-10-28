@@ -89,14 +89,15 @@ export default function Home() {
                   Welcome to Argonyx Hackathon 2024! <br />
                   <br />
                   Dive into an exciting, two-round competition designed to push
-                  the boundaries of innovation and creativity. Whether you're a
-                  coding enthusiast or a problem-solving visionary, Argonyx is
-                  the ultimate platform to showcase your skills, connect with
-                  like-minded individuals, and make an impact. <br />
+                  the boundaries of innovation and creativity. Whether
+                  you&apos;re a coding enthusiast or a problem-solving
+                  visionary, Argonyx is the ultimate platform to showcase your
+                  skills, connect with like-minded individuals, and make an
+                  impact. <br />
                   <br />
-                  The hackathon features an initial round where you'll present
-                  your ideas, and top teams will advance to an intensive 24-hour
-                  offline hackathon to bring their solutions to life!
+                  The hackathon features an initial round where you&apos;ll
+                  present your ideas, and top teams will advance to an intensive
+                  24-hour offline hackathon to bring their solutions to life!
                 </p>
               </div>
             </div>
@@ -207,7 +208,7 @@ export default function Home() {
 
       {/* Schedule Section */}
       <FadeInSection>
-        <div className="w-fit flex flex-col items-center justify-center m-6 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
+        <div className="w-fit flex flex-col items-center justify-center m-6 md:p-5 rounded-lg md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
           <h2 className="text-4xl md:text-3xl font-semibold mb-6 mr-4">
             Schedule
           </h2>
@@ -222,7 +223,7 @@ export default function Home() {
       <FadeInSection>
         <div className="flex flex-col md:items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-            What's at Stake - Rewards and Prizes:
+            What&apos;s at Stake - Rewards and Prizes:
           </h2>
           <p className="pb-3">
             Each track will have rewards for the top three teams of each track:
