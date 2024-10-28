@@ -136,54 +136,57 @@ export default function Home() {
         {/*Guidelines*/}
         <FadeInSection>
           <div className="flex flex-wrap md:flex-nowrap w-full">
-            <div className="flex flex-col md:w-1/2 justify-center items-center p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
-              <h2 className="text-3xl md:text-3xl font-semibold">Guidelines</h2>
-              <div className="flex-grow flex flex-col pr-4">
-                <h3 className="font-semibold ">Eligibility: </h3>
+            <div className="flex flex-wrap md:flex-nowrap w-full">
+              <div className="flex flex-col md:w-1/2 justify-start pl-10 p-4 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+                <h2 className="text-3xl font-semibold text-center">Guidelines</h2>
 
-                <p>Open to all undergraduate students.</p>
-              </div>
+                <div className="flex space-x-2">
+                  <h3 className="font-semibold">Eligibility:</h3>
+                  <p>Open to all undergraduate students.</p>
+                </div>
 
-              <div className="flex-grow flex flex-col justify-center">
-                <h3 className="font-semibold">Team Composition: </h3>
+                <div className="flex flex-col space-y-2">
+                  <h3 className="font-semibold">Team Composition:</h3>
+                  <ul className="list-disc pl-4">
+                    <li className="flex items-center">
+                      <h4 className="font-semibold mr-1">
+                        Inter-college teams:
+                      </h4>{" "}
+                      Allowed
+                    </li>
+                    <li className="flex items-center">
+                      <h4 className="font-semibold mr-1">
+                        Inter-specialization teams:
+                      </h4>{" "}
+                      Allowed
+                    </li>
+                    <li className="flex items-center">
+                      <h4 className="font-semibold mr-1">Team Size:</h4> 2-4
+                      members
+                    </li>
+                  </ul>
+                </div>
 
-                <ul className="list-disc pl-4">
-                  <li className="flex items-center">
-                    <h4 className="font-semibold mr-1">Inter-college teams:</h4>{" "}
-                    Allowed
-                  </li>
-                  <li className="flex items-center">
-                    <h4 className="font-semibold mr-1">
-                      Inter-specialization teams:
-                    </h4>{" "}
-                    Allowed
-                  </li>
-                  <li className="flex items-center">
-                    <h4 className="font-semibold mr-1">Team Size:</h4> 2-4
-                    members
-                  </li>
-                </ul>
-              </div>
-              <div className="flex-grow flex">
-                <h3 className="font-semibold mr-2">Format: </h3>
+                <div className="flex space-x-2">
+                  <h3 className="font-semibold">Format:</h3>
+                  <p>Team participation is required.</p>
+                </div>
 
-                <p>Team participation is required.</p>
-              </div>
-              <div className="flex-grow flex flex-col justify-center">
-                <h3 className="font-semibold ml-2">Rounds:</h3>
-
-                <ul className="list-disc pl-5">
-                  <li className="flex flex-wrap items-center">
-                    <h4 className="font-semibold mr-1">Round 1:</h4> Online
-                    submission of solutions based on provided problem
-                    statements.
-                  </li>
-                  <li className="flex flex-wrap items-center">
-                    <h4 className="font-semibold mr-1">Round 2:</h4> Offline
-                    hackathon for shortlisted teams in each track, lasting 24
-                    hours.
-                  </li>
-                </ul>
+                <div className="flex flex-col space-y-2">
+                  <h3 className="font-semibold">Rounds:</h3>
+                  <ul className="list-disc pl-5">
+                    <li className="flex flex-wrap items-center">
+                      <h4 className="font-semibold mr-1">Round 1:</h4> Online
+                      submission of solutions based on provided problem
+                      statements.
+                    </li>
+                    <li className="flex flex-wrap items-center">
+                      <h4 className="font-semibold mr-1">Round 2:</h4> Offline
+                      hackathon for shortlisted teams in each track, lasting 24
+                      hours.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
