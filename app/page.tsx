@@ -34,7 +34,7 @@ export default function Home() {
 
             {/* Registration Info */}
 
-            <div className="flex-1 h-min md:w-1/4 flex flex-col p-4 m-5  md:p-5 rounded-lg m-2 md:m-5 space-y-3  p-5 rounded-lg m-2 md:m-5 space-y-3">
+            <div className="flex-1 h-min md:w-1/4 flex flex-col p-4 m-5  md:p-5 rounded-lg m-2 md:m-5 space-y-3  p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
               <div className="w-full flex justify-evenly items-center pr-3">
                 <Image
                   src={PeopleIcon}
@@ -80,7 +80,7 @@ export default function Home() {
         {/* About Section */}
         <FadeInSection>
           <div className="flex flex-wrap md:flex-nowrap w-full">
-            <div className="md:w-2/3 flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 ">
+            <div className="md:w-2/3 flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
               <h2 className="text-4xl md:text-3xl font-semibold mb-4 flex justify-center">
                 About ARGONYX
               </h2>
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
             </div>
             {/*Tracks and Problems*/}
-            <div className="flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 ">
+            <div className="flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
               <h2 className="text-2xl md:text-3xl font-semibold flex justify-center">
                 Tracks & Problem Statements
               </h2>
@@ -126,7 +126,7 @@ export default function Home() {
         {/*Guidelines*/}
         <FadeInSection>
           <div className="flex flex-wrap md:flex-nowrap w-full">
-            <div className="flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 ">
+            <div className="flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
               <h2 className="text-2xl md:text-3xl font-semibold flex justify-center">
                 Guidelines
               </h2>
@@ -180,7 +180,7 @@ export default function Home() {
             </div>
 
             {/* Sponsors Section */}
-            <div className="flex-1 h-fit flex flex-col items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3">
+            <div className="flex-1 h-fit flex flex-col items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
               <h2 className="text-4xl md:text-3xl font-semibold mb-4">
                 Sponsors
               </h2>
@@ -207,7 +207,7 @@ export default function Home() {
 
       {/* Schedule Section */}
       <FadeInSection>
-        <div className="w-full flex flex-col items-center justify-center m-6 md:p-5 rounded-lg m-2 md:m-5 space-y-3 ">
+        <div className="w-fit flex flex-col items-center justify-center m-6 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
           <h2 className="text-4xl md:text-3xl font-semibold mb-6 mr-4">
             Schedule
           </h2>
@@ -220,25 +220,23 @@ export default function Home() {
 
       {/* Prizes Section */}
       <FadeInSection>
-        <div className="flex flex-col md:items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 ">
-          
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-              What's at Stake - Rewards and Prizes:
-            </h2>
-            <p className="pb-3">
-              Each track will have rewards for the top three teams of each
-              track:
-            </p>
-            <ul className="space-y-4 text-center flex flex-col items-center">
-              <li className="flex items-center">🥇 Winner: ₹10,000</li>
-              <li className="flex items-center">🥈 First Runner Up: ₹6,000</li>
-              <li className="flex items-center">🥉 Second Runner Up: ₹4,000</li>
-            </ul>
-            <p className="pt-3">
-              Participation certificate for all the participants who make a
-              submission <br />Get in touch in amazing startups!
-            </p>
-          
+        <div className="flex flex-col md:items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+            What's at Stake - Rewards and Prizes:
+          </h2>
+          <p className="pb-3">
+            Each track will have rewards for the top three teams of each track:
+          </p>
+          <ul className="space-y-4 text-center flex flex-col items-center">
+            <li className="flex items-center">🥇 Winner: ₹10,000</li>
+            <li className="flex items-center">🥈 First Runner Up: ₹6,000</li>
+            <li className="flex items-center">🥉 Second Runner Up: ₹4,000</li>
+          </ul>
+          <p className="pt-3">
+            Participation certificate for all the participants who make a
+            submission <br />
+            Get in touch in amazing startups!
+          </p>
         </div>
       </FadeInSection>
     </div>

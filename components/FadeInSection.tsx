@@ -35,7 +35,7 @@ const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
 
   return (
     <div
-      className={`w-full fade-in-section ${isVisible ? "is-visible" : ""}`}
+      className={`w-full flex justify-center fade-in-section ${isVisible ? "is-visible" : ""}`}
       ref={domRef}
     >
       {children}
