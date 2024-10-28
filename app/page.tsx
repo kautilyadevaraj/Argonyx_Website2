@@ -3,11 +3,17 @@ import * as React from "react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import CalenderIcon from "@/public/calender.png";
-import ArgonyxLogo from "@/public/argonyx_logo.png";
+import ArgonyxLogo from "@/public/poster.png";
+import AIImage from "@/public/ai_ml.png";
+import WebLogo from "@/public/web dev.png";
+import First from "@/public/first.png";
+import Second from "@/public/second.png";
+import Third from "@/public/third.png";
 import Image from "next/image";
 import { TimelineLayout } from "@/components/HackathonTimeline";
 import { timelineData } from "@/components/data";
 import FadeInSection from "@/components/FadeInSection";
+import Sponsor1 from "@/public/sponsor_1.png";
 
 export default function Home() {
   return (
@@ -20,8 +26,8 @@ export default function Home() {
           style={{ backgroundImage: "url('/path-to-your-image.png')" }}
         >
           {/* Logo and Title */}
-          <div className="flex flex-wrap justify-between items-center w-full">
-            <div className="md:w-2/3 flex p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 justify-center ">
+          <div className="flex flex-wrap justify-start items-center w-full">
+            <div className="md:w-2/3 flex p-4 md:p-5 mx-5 rounded-lg mt-10 mb-0 space-y-3 justify-center ">
               <Image
                 src={ArgonyxLogo}
                 width={700}
@@ -32,7 +38,7 @@ export default function Home() {
 
             {/* Registration Info */}
 
-            <div className="flex-1 h-min md:w-1/4 flex flex-col p-4 m-5  md:p-5 rounded-lg m-2 md:m-5 space-y-3  p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
+            <div className="flex-1 h-fit md:w-1/4 flex flex-col p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
               <div className="w-full flex justify-evenly pl-6">
                 <Image
                   src={CalenderIcon}
@@ -48,8 +54,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
-              <Button>Register</Button>
+              <a
+                href="https://unstop.com/o/2dkgqL3?lb=y7pzHMdA"
+                target="_blank"
+                className="flex justify-center"
+              >
+                <Button>Register</Button>
+              </a>
             </div>
           </div>
         </div>
@@ -60,8 +71,8 @@ export default function Home() {
         {/* About Section */}
         <FadeInSection>
           <div className="flex flex-wrap md:flex-nowrap w-full">
-            <div className="md:w-2/3 flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
-              <h2 className="text-4xl md:text-3xl font-semibold mb-4 flex justify-center">
+            <div className="md:w-1/2 flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+              <h2 className="text-3xl md:text-3xl font-semibold mb-4 flex justify-center">
                 About ARGONYX
               </h2>
               <div className="flex-grow flex flex-col justify-center items-center">
@@ -82,8 +93,8 @@ export default function Home() {
               </div>
             </div>
             {/*Tracks and Problems*/}
-            <div className="flex flex-col p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
-              <h2 className="text-2xl md:text-3xl font-semibold flex justify-center text-center">
+            <div className="flex flex-col md:w-1/2 p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+              <h2 className="text-3xl md:text-3xl font-semibold flex justify-center text-center">
                 Tracks & Problem Statements
               </h2>
               <div className="flex-grow flex flex-col justify-center items-center">
@@ -92,9 +103,27 @@ export default function Home() {
                   track offering unique problem statements tailored to specific
                   domains:
                 </p>
-                <ul className="flex flex-col justify-center items-center pt-4 text-lg md:text-xl">
-                  <li className="font-semibold">AI/ML</li>
-                  <li className="font-semibold">Web Development</li>
+                <ul className="flex w-full justify-evenly items-center pt-4 text-lg md:text-xl">
+                  <div>
+                    <Image
+                      src={AIImage}
+                      alt="ai_logo"
+                      height={125}
+                      width={125}
+                    />
+                    <li className="font-semibold text-center">AI/ML</li>
+                  </div>
+                  <div className="flex flex-col items-center justify-center pt-6">
+                    <Image
+                      src={WebLogo}
+                      alt="web_dev_logo"
+                      height={80}
+                      width={80}
+                    />
+                    <li className="font-semibold text-center pt-4">
+                      Web Development
+                    </li>
+                  </div>
                 </ul>
                 <p className="text-center pt-4">
                   Details about the problem statements will be available upon
@@ -107,8 +136,8 @@ export default function Home() {
         {/*Guidelines*/}
         <FadeInSection>
           <div className="flex flex-wrap md:flex-nowrap w-full">
-            <div className="flex flex-col justify-center items-center p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
-              <h2 className="text-2xl md:text-3xl font-semibold">Guidelines</h2>
+            <div className="flex flex-col md:w-1/2 justify-center items-center p-4 md:p-5 m-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+              <h2 className="text-3xl md:text-3xl font-semibold">Guidelines</h2>
               <div className="flex-grow flex flex-col pr-4">
                 <h3 className="font-semibold ">Eligibility: </h3>
 
@@ -159,22 +188,19 @@ export default function Home() {
             </div>
 
             {/* Sponsors Section */}
-            <div className="flex-1 h-fit flex flex-col items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
-              <h2 className="text-4xl md:text-3xl font-semibold mb-4">
+            <div className="flex-1 h-fit flex flex-col md:w-1/2 items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+              <h2 className="text-3xl md:text-3xl font-semibold mb-4">
                 Sponsors
               </h2>
               <div className="flex-grow flex flex-col ">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 bg-white rounded-full"></div>
-                    <span>Sponsor Name</span>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 bg-white rounded-full"></div>
-                    <span>Sponsor Name</span>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 bg-white rounded-full"></div>
+                    <Image
+                      src={Sponsor1}
+                      alt="sponsor1"
+                      height={80}
+                      width={80}
+                    />
                     <span>Sponsor Name</span>
                   </div>
                 </div>
@@ -186,7 +212,7 @@ export default function Home() {
 
       {/* Schedule Section */}
       <FadeInSection>
-        <div className="w-fit flex flex-col items-center justify-center m-6 md:p-5 rounded-lg md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
+        <div className="w-fit flex flex-col items-center justify-center m-6 md:p-5 rounded-lg md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
           <h2 className="text-4xl md:text-3xl font-semibold mb-6 mr-4">
             Schedule
           </h2>
@@ -200,21 +226,33 @@ export default function Home() {
       {/* Prizes Section */}
       <FadeInSection>
         <div className="flex flex-col md:items-center p-4 m-5 md:p-5 rounded-lg m-2 md:m-5 space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/45">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">
+          <h2 className="text-3xl md:text-3xl font-semibold mb-4 text-center">
             What&apos;s at Stake - Rewards and Prizes
           </h2>
           <p className="pb-3 text-center">
             Each track will have rewards for the top three teams of each track:
           </p>
-          <ul className="space-y-4 text-center flex flex-col items-center">
-            <li className="flex items-center">🥇 Winner: ₹10,000</li>
-            <li className="flex items-center">🥈 First Runner Up: ₹6,000</li>
-            <li className="flex items-center">🥉 Second Runner Up: ₹4,000</li>
-          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+            <div className="flex flex-col items-center p-4 rounded-lg ">
+              <Image src={First} alt="first_place" height={80} width={80} />
+              <h3 className="font-semibold text-lg">Winner</h3>
+              <p className="text-xl md:text-lg">₹10,000</p>
+            </div>
+            <div className="flex flex-col items-center p-4 rounded-lg">
+              <Image src={Second} alt="second_place" height={80} width={80} />
+              <h3 className="font-semibold text-lg">First Runner Up</h3>
+              <p className="text-xl md:text-lg">₹6,000</p>
+            </div>
+            <div className="flex flex-col items-center p-4 rounded-lg">
+              <Image src={Third} alt="third_place" height={80} width={80} />
+              <h3 className="font-semibold text-lg">Second Runner Up</h3>
+              <p className="text-xl md:text-lg">₹4,000</p>
+            </div>
+          </div>
           <p className="pt-3 text-center">
             Participation certificate for all the participants who make a
-            submission <br />
-            Get in touch in amazing startups!
+            submission. <br />
+            Get in touch with amazing startups!
           </p>
         </div>
       </FadeInSection>

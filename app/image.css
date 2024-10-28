@@ -1,7 +1,13 @@
 body {
-  background-image: url('../public/tech_background.jpg');
+  background-image: url('../public/phoneBG1.jpg');
   background-size: cover;  /* Ensures the image covers the screen */
   background-position: center;
   background-attachment: fixed;  /* Keeps the image fixed while scrolling */
   margin: 0;  /* Removes default margin */
+}
+
+@media (min-width: 1024px) { 
+  body {
+    background-image: url('../public/big_screen_bg.jpg');  /* Use a different image for larger screens */
+  }
 }

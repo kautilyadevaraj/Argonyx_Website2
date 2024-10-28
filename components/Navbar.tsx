@@ -17,7 +17,7 @@ function Navbar() {
           <Image src={RvuLogo} alt="rvu_icon" height={100} width={140} />
         </a>
         <div className="w-full flex md:justify-end items-center">
-          <a href="#" className="px-3">
+          <a href="#" className="md:px-3">
             <Image
               src={VikshaIcon}
               alt="viksha_icon"
@@ -25,12 +25,12 @@ function Navbar() {
               width={130}
             />
           </a>
-          <Image src={XLogo} alt="x" height={15} width={35} />
-          <a href="#" className="px-3">
+          <Image src={XLogo} alt="x" height={10} width={30} />
+          <a href="#" className="md:px-3">
             <Image src={IEEELogo} alt="iee_icon" height={80} width={80} />
           </a>
-          <Image src={XLogo} alt="x" height={15} width={35} />
-          <a href="#" className="px-3">
+          <Image src={XLogo} alt="x" height={10} width={30} />
+          <a href="#" className="md:px-3">
             <Image
               src={NeuralNexusIcon}
               alt="neural_nexus_icon"
