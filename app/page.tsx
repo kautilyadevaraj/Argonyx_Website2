@@ -2,13 +2,7 @@
 import * as React from "react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+
 import {
   Drawer,
   DrawerClose,
@@ -20,7 +14,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
-import CalenderIcon from "@/public/calender.png";
+
 import ArgonyxLogo from "@/public/poster.png";
 import AIImage from "@/public/ai_ml.png";
 import WebLogo from "@/public/web dev.png";
