@@ -2,6 +2,24 @@
 import * as React from "react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+
 import CalenderIcon from "@/public/calender.png";
 import ArgonyxLogo from "@/public/poster.png";
 import AIImage from "@/public/ai_ml.png";
@@ -41,27 +59,86 @@ export default function Home() {
 
             <div className="flex-1 h-fit md:w-1/4 flex flex-col p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
               <div className="w-full flex justify-evenly pl-6">
-                <Image
-                  src={CalenderIcon}
-                  alt="calendar"
-                  height={40}
-                  width={70}
-                  style={{ filter: "invert(50%) brightness(180%)" }}
-                />
                 <div className="flex flex-col justify-center items-start">
-                  <div className="flex text-xl">Registration Deadline</div>
-                  <div className="flex w-full justify-center text-lg">
-                    8th Nov 2024
+                  <div className="flex text-xl">
+                    Click to view the problem statements!
+                  </div>
+                  <div className="flex justify-center w-full">
+                    <Drawer>
+                      <DrawerTrigger asChild>
+                        <Button variant="outline">Problem Statements</Button>
+                      </DrawerTrigger>
+                      <DrawerContent>
+                        <DrawerHeader>
+                          <DrawerTitle>
+                            Here are the problem statements!
+                          </DrawerTitle>
+                          <DrawerDescription>
+                            <div className="flex flex-col items-center">
+                              <Image
+                                src={AIImage}
+                                alt="ai_logo"
+                                height={125}
+                                width={125}
+                              />
+                              <div>
+                                <h2 className="text-2xl font-semibold text-primary pb-2">
+                                  AI / ML
+                                </h2>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Mauris rhoncus aliquam
+                                  varius. Etiam vel varius sem, ac bibendum
+                                  sapien. Maecenas ut enim consectetur, volutpat
+                                  leo non, lacinia nibh. Curabitur elementum
+                                  interdum nunc dapibus pulvinar. Mauris maximus
+                                  quis tellus et rutrum. Lorem ipsum dolor sit
+                                  amet, consectetur adipiscing elit. Nunc
+                                  elementum laoreet eros blandit rhoncus. Aenean
+                                  gravida nunc nec odio porttitor molestie.
+                                  Aenean viverra erat leo, et facilisis dui
+                                  blandit at.
+                                </p>
+                              </div>
+                              <Image
+                                src={WebLogo}
+                                alt="web_dev_logo"
+                                height={80}
+                                width={80}
+                                className="pt-5"
+                              />
+                              <div>
+                                <h2 className="text-2xl font-semibold text-primary pb-2">
+                                  Web Development
+                                </h2>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Mauris rhoncus aliquam
+                                  varius. Etiam vel varius sem, ac bibendum
+                                  sapien. Maecenas ut enim consectetur, volutpat
+                                  leo non, lacinia nibh. Curabitur elementum
+                                  interdum nunc dapibus pulvinar. Mauris maximus
+                                  quis tellus et rutrum. Lorem ipsum dolor sit
+                                  amet, consectetur adipiscing elit. Nunc
+                                  elementum laoreet eros blandit rhoncus. Aenean
+                                  gravida nunc nec odio porttitor molestie.
+                                  Aenean viverra erat leo, et facilisis dui
+                                  blandit at.
+                                </p>
+                              </div>
+                            </div>
+                          </DrawerDescription>
+                        </DrawerHeader>
+                        <DrawerFooter>
+                          <DrawerClose>
+                            <Button variant="default">Close</Button>
+                          </DrawerClose>
+                        </DrawerFooter>
+                      </DrawerContent>
+                    </Drawer>
                   </div>
                 </div>
               </div>
-              <a
-                href="https://unstop.com/o/2dkgqL3?lb=y7pzHMdA"
-                target="_blank"
-                className="flex justify-center"
-              >
-                <Button>Register</Button>
-              </a>
             </div>
           </div>
         </div>
@@ -206,13 +283,19 @@ export default function Home() {
                       height={100}
                       width={100}
                     />
-                    <span className="text-xl font-semibold">Astrae Research</span>
+                    <span className="text-xl font-semibold">
+                      Astrae Research
+                    </span>
                   </div>
                 </div>
               </div>
               <div className="flex-grow flex flex-col pr-16">
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-4">
+                  <a
+                    href="https://engagex.app/"
+                    target="_blank"
+                    className="flex items-center space-x-4"
+                  >
                     <Image
                       src={engagexLogo}
                       alt="engagex"
@@ -220,7 +303,7 @@ export default function Home() {
                       width={70}
                     />
                     <span className="text-xl font-semibold pl-4">engagex</span>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
