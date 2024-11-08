@@ -2,7 +2,11 @@
 import * as React from "react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import HyperText from "@/components/ui/hyper-text";
 
+import { cn } from "@/lib/utils";
+import AnimatedShinyText from "@/components/ui/animated-shiny-text";
 import {
   Drawer,
   DrawerClose,
@@ -54,13 +58,26 @@ export default function Home() {
             <div className="flex-1 h-fit md:w-1/4 flex flex-col p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
               <div className="w-full flex justify-evenly">
                 <div className="flex flex-col justify-center items-start">
-                  <div className="flex text-xl text-center">
-                    Click to view the problem statements!
+                  <div className="flex text-xl flex-col text-center">
+                    <HyperText
+                      className="text-xl font-bold text-black dark:text-white"
+                      text="the registrations are closed!"
+                      duration={10}
+                    />
                   </div>
                   <div className="flex justify-center w-full">
                     <Drawer>
                       <DrawerTrigger asChild>
-                        <Button variant="default" className="mt-4">Problem Statements</Button>
+                        <div
+                          className={cn(
+                            "group rounded-full border mt-2 border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+                          )}
+                        >
+                          <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400 text-lg">
+                            <span>✨ Problem Statements</span>
+                            <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+                          </AnimatedShinyText>
+                        </div>
                       </DrawerTrigger>
                       <DrawerContent>
                         <DrawerHeader>
