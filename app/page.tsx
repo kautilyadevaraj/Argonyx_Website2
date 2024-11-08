@@ -52,7 +52,7 @@ export default function Home() {
             {/* Registration Info */}
 
             <div className="flex-1 h-fit md:w-1/4 flex flex-col p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
-              <div className="w-full flex justify-evenly pl-6">
+              <div className="w-full flex justify-evenly">
                 <div className="flex flex-col justify-center items-start">
                   <div className="flex text-xl text-center">
                     Click to view the problem statements!
