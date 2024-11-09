@@ -100,7 +100,7 @@ export default function Home() {
                                   AI / ML
                                 </h2>
                                 <div className="flex justify-evenly w-full">
-                                  <Popover className="overflow-y scrollable">
+                                  <Popover>
                                     <PopoverTrigger>
                                       <Button>
                                         View Problem <br /> Statement 1
