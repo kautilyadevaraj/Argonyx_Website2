@@ -4,6 +4,11 @@ import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import HyperText from "@/components/ui/hyper-text";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 import { cn } from "@/lib/utils";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
@@ -17,7 +22,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-
 
 import ArgonyxLogo from "@/public/poster.png";
 import AIImage from "@/public/ai_ml.png";
@@ -58,7 +62,7 @@ export default function Home() {
             <div className="flex-1 h-fit md:w-1/4 flex flex-col p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
               <div className="w-full flex justify-evenly">
                 <div className="flex flex-col justify-center items-start">
-                  <div className="flex text-xl flex-col text-center">
+                  <div className="flex text-xl flex-col items-center text-center">
                     <HyperText
                       className="text-xl font-bold text-black dark:text-white"
                       text="the registrations are closed!"
@@ -92,24 +96,32 @@ export default function Home() {
                                 height={125}
                                 width={125}
                               />
-                              <div>
+                              <div className="flex flex-col items-center">
                                 <h2 className="text-2xl font-semibold text-primary pb-2">
                                   AI / ML
                                 </h2>
-                                <p>
-                                  Lorem ipsum dolor sit amet, consectetur
-                                  adipiscing elit. Mauris rhoncus aliquam
-                                  varius. Etiam vel varius sem, ac bibendum
-                                  sapien. Maecenas ut enim consectetur, volutpat
-                                  leo non, lacinia nibh. Curabitur elementum
-                                  interdum nunc dapibus pulvinar. Mauris maximus
-                                  quis tellus et rutrum. Lorem ipsum dolor sit
-                                  amet, consectetur adipiscing elit. Nunc
-                                  elementum laoreet eros blandit rhoncus. Aenean
-                                  gravida nunc nec odio porttitor molestie.
-                                  Aenean viverra erat leo, et facilisis dui
-                                  blandit at.
-                                </p>
+                                <Popover>
+                                  <PopoverTrigger>
+                                    <Button>View Problem Statement</Button>
+                                  </PopoverTrigger>
+                                  <PopoverContent>
+                                    <div className="flex flex-col items-center">
+                                      <h3 className="text-md font-semibold text-center">
+                                        Smart Travel Companion Platform for
+                                        Enhancing Local Tourism Experiences with
+                                        data driven customer reach
+                                      </h3>
+                                      <br />
+                                      <h4 className="text-sm ">
+                                        Build a "Smart Travel Companion
+                                        Platform" that provides travellers with
+                                        an engaging, real-time experience of a
+                                        destination
+                                      </h4>
+                                      <p></p>
+                                    </div>
+                                  </PopoverContent>
+                                </Popover>
                               </div>
                               <Image
                                 src={WebLogo}
@@ -118,24 +130,71 @@ export default function Home() {
                                 width={80}
                                 className="pt-5"
                               />
-                              <div>
-                                <h2 className="text-2xl font-semibold text-primary pb-2">
+                              <div className="flex flex-col items-center">
+                                <h2 className="text-xl font-semibold text-primary pb-2">
                                   Web Development
                                 </h2>
-                                <p>
-                                  Lorem ipsum dolor sit amet, consectetur
-                                  adipiscing elit. Mauris rhoncus aliquam
-                                  varius. Etiam vel varius sem, ac bibendum
-                                  sapien. Maecenas ut enim consectetur, volutpat
-                                  leo non, lacinia nibh. Curabitur elementum
-                                  interdum nunc dapibus pulvinar. Mauris maximus
-                                  quis tellus et rutrum. Lorem ipsum dolor sit
-                                  amet, consectetur adipiscing elit. Nunc
-                                  elementum laoreet eros blandit rhoncus. Aenean
-                                  gravida nunc nec odio porttitor molestie.
-                                  Aenean viverra erat leo, et facilisis dui
-                                  blandit at.
-                                </p>
+                                <Popover>
+                                  <PopoverTrigger>
+                                    <Button>View Problem Statement</Button>
+                                  </PopoverTrigger>
+                                  <PopoverContent>
+                                    <div className="flex flex-col items-center">
+                                      <h3 className="text-md font-semibold text-center">
+                                        Smart Travel Companion Platform for
+                                        Enhancing Local Tourism Experiences with
+                                        Data Driven Customer Reach
+                                      </h3>
+                                      <br />
+                                      <h4 className="text-sm font-semibold">
+                                        Build a "Smart Travel Companion
+                                        Platform" that provides travellers with
+                                        an engaging, real-time experience of a
+                                        destination
+                                      </h4>
+                                      <p className="text-xs">
+                                        This platform should identify and
+                                        display area-specific specialities,
+                                        including: <br />{" "}
+                                        <strong>Cuisine recommendations</strong>{" "}
+                                        with must-try local dishes. <br />{" "}
+                                        <strong>
+                                          Geographical Indication (GI)
+                                        </strong>{" "}
+                                        Products specific to the location,
+                                        encouraging travelers to explore and
+                                        purchase authentic, locally crafted
+                                        goods. Landmarks and Activities
+                                        suggestions, including popular and
+                                        hidden gems. <br />{" "}
+                                        <strong>
+                                          Proactive Notifications:
+                                        </strong>
+                                        Once a traveler enters the location and
+                                        opens the app/website, the platform
+                                        should automatically highlight must-see
+                                        and must-do experiences. If the user
+                                        closes the app, notifications should
+                                        keep them informed. <br />{" "}
+                                        <strong>
+                                          Tour and Travel Bookings:
+                                        </strong>{" "}
+                                        If there are guided tours, local
+                                        experiences, or activities (e.g.,
+                                        cultural events, adventure sports), the
+                                        platform should enable users to book
+                                        them directly. <br />{" "}
+                                        <strong>
+                                          Pre-Visit Booking Options:
+                                        </strong>{" "}
+                                        Allow travelers to book experiences,
+                                        tours, and accommodations beforehand,
+                                        ensuring they have priority access and a
+                                        personalized itinerary.
+                                      </p>
+                                    </div>
+                                  </PopoverContent>
+                                </Popover>
                               </div>
                             </div>
                           </DrawerDescription>
@@ -342,7 +401,7 @@ export default function Home() {
             What&apos;s at Stake - Rewards and Prizes
           </h2>
           <p className="pb-3 text-center">
-            Each track will have rewards for the top three teams of each track:
+            Each track will have rewards for the top three teams:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
             <div className="flex flex-col items-center p-4 rounded-lg ">
@@ -362,7 +421,7 @@ export default function Home() {
             </div>
           </div>
           <p className="pt-3 text-center">
-            Participation certificate for all the participants who make a
+            A Participation certificate for all the participants who make a
             submission. <br />
             Get in touch with amazing startups!
           </p>
