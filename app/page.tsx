@@ -140,7 +140,7 @@ export default function Home() {
                                         <strong>Generative AI Insights:</strong>
                                         Utilize AI to analyze posts for
                                         sentiment, engagement potential, and
-                                        relevance to the user's interests or
+                                        relevance to the user&apos;s interests or
                                         industry.
                                         <br />{" "}
                                         <strong>
@@ -210,7 +210,7 @@ export default function Home() {
                                           Opportunity Targeting:
                                         </strong>{" "}
                                         Prioritize job opportunities that align
-                                        closely with the user's profile,
+                                        closely with the user&apos;s profile,
                                         optimizing their job search with
                                         targeted recommendations.
                                         
