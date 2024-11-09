@@ -100,13 +100,13 @@ export default function Home() {
                                   AI / ML
                                 </h2>
                                 <div className="flex justify-evenly w-full">
-                                  <Popover>
+                                  <Popover className="overflow-y scrollable">
                                     <PopoverTrigger>
                                       <Button>
                                         View Problem <br /> Statement 1
                                       </Button>
                                     </PopoverTrigger>
-                                    <PopoverContent>
+                                    <PopoverContent >
                                       <div className="flex flex-col items-center">
                                         <h3 className="text-md font-semibold text-center">
                                           Unified Social Engagement Tracker for
