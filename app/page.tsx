@@ -113,10 +113,10 @@ export default function Home() {
                                       </h3>
                                       <br />
                                       <h4 className="text-sm ">
-                                        Build a "Smart Travel Companion
-                                        Platform" that provides travellers with
-                                        an engaging, real-time experience of a
-                                        destination
+                                        Build a &quot;Smart Travel Companion
+                                        Platform&quot; that provides travellers
+                                        with an engaging, real-time experience
+                                        of a destination
                                       </h4>
                                       <p></p>
                                     </div>
@@ -147,10 +147,10 @@ export default function Home() {
                                       </h3>
                                       <br />
                                       <h4 className="text-sm font-semibold">
-                                        Build a "Smart Travel Companion
-                                        Platform" that provides travellers with
-                                        an engaging, real-time experience of a
-                                        destination
+                                        Build a &quot;Smart Travel Companion
+                                        Platform&quot; that provides travellers
+                                        with an engaging, real-time experience
+                                        of a destination
                                       </h4>
                                       <p className="text-xs">
                                         This platform should identify and
