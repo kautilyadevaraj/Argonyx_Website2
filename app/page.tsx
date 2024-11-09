@@ -5,6 +5,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import HyperText from "@/components/ui/hyper-text";
 import {
+  Popover1,
+  PopoverContent1,
+  PopoverTrigger1,
+} from "@/components/ui/popoverPS1";
+import {
   Popover,
   PopoverContent,
   PopoverTrigger,
@@ -100,11 +105,11 @@ export default function Home() {
                                 <h2 className="text-2xl font-semibold text-primary pb-2">
                                   AI / ML
                                 </h2>
-                                <Popover>
-                                  <PopoverTrigger>
+                                <Popover1>
+                                  <PopoverTrigger1>
                                     <Button>View Problem Statement 1</Button>
-                                  </PopoverTrigger>
-                                  <PopoverContent>
+                                  </PopoverTrigger1>
+                                  <PopoverContent1>
                                     <div className="flex flex-col items-center">
                                       <h3 className="text-md font-semibold text-center">
                                         Unified Social Engagement Tracker for
@@ -158,8 +163,8 @@ export default function Home() {
                                         streamlined experience.
                                       </p>
                                     </div>
-                                  </PopoverContent>
-                                </Popover>
+                                  </PopoverContent1>
+                                </Popover1>
                                 <Popover>
                                   <PopoverTrigger>
                                     <Button className="mt-4">
