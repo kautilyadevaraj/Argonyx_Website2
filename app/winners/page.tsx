@@ -87,8 +87,18 @@ export default function Winners(): JSX.Element {
                     <Image src={First} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Neon Gradient Card
+                      Team Name
                     </h1>
+                    <ul className="pt-2">
+                      <div className="flex space-x-3">
+                        <li>Member 1</li>
+                        <li>Member 2</li>
+                      </div>
+                      <div className="flex space-x-3">
+                        <li>Member 3</li>
+                        <li>Member 4</li>
+                      </div>
+                    </ul>
                   </div>
                 </NeonGradientCard>
                 <NeonGradientCard className="max-w-sm items-center justify-center text-center">
@@ -96,8 +106,18 @@ export default function Winners(): JSX.Element {
                     <Image src={Second} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Neon Gradient Card
+                      Team Name
                     </h1>
+                    <ul className="pt-2">
+                      <div className="flex space-x-3">
+                        <li>Member 1</li>
+                        <li>Member 2</li>
+                      </div>
+                      <div className="flex space-x-3">
+                        <li>Member 3</li>
+                        <li>Member 4</li>
+                      </div>
+                    </ul>
                   </div>
                 </NeonGradientCard>
                 <NeonGradientCard className="max-w-sm items-center justify-center text-center">
@@ -105,8 +125,18 @@ export default function Winners(): JSX.Element {
                     <Image src={Third} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Neon Gradient Card
+                      Team Name
                     </h1>
+                    <ul className="pt-2">
+                      <div className="flex space-x-3">
+                        <li>Member 1</li>
+                        <li>Member 2</li>
+                      </div>
+                      <div className="flex space-x-3">
+                        <li>Member 3</li>
+                        <li>Member 4</li>
+                      </div>
+                    </ul>
                   </div>
                 </NeonGradientCard>
               </div>
@@ -125,8 +155,18 @@ export default function Winners(): JSX.Element {
                     <Image src={First} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Neon Gradient Card
+                      Team Name
                     </h1>
+                    <ul className="pt-2">
+                      <div className="flex space-x-3">
+                        <li>Member 1</li>
+                        <li>Member 2</li>
+                      </div>
+                      <div className="flex space-x-3">
+                        <li>Member 3</li>
+                        <li>Member 4</li>
+                      </div>
+                    </ul>
                   </div>
                 </NeonGradientCard>
                 <NeonGradientCard className="max-w-sm items-center justify-center text-center">
@@ -134,17 +174,37 @@ export default function Winners(): JSX.Element {
                     <Image src={Second} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Neon Gradient Card
+                      Team Name
                     </h1>
+                    <ul className="pt-2">
+                      <div className="flex space-x-3">
+                        <li>Member 1</li>
+                        <li>Member 2</li>
+                      </div>
+                      <div className="flex space-x-3">
+                        <li>Member 3</li>
+                        <li>Member 4</li>
+                      </div>
+                    </ul>
                   </div>
                 </NeonGradientCard>
-                <NeonGradientCard className="max-w-sm items-center justify-center text-center">
+                <NeonGradientCard className="w-full items-center justify-center text-center">
                   <div className="flex flex-col items-center">
                     <Image src={Third} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Neon Gradient Card
+                      Team Name
                     </h1>
+                    <ul className="pt-2">
+                      <div className="flex space-x-3">
+                        <li>Member 1</li>
+                        <li>Member 2</li>
+                      </div>
+                      <div className="flex space-x-3">
+                        <li>Member 3</li>
+                        <li>Member 4</li>
+                      </div>
+                    </ul>
                   </div>
                 </NeonGradientCard>
               </div>
