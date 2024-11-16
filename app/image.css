@@ -1,13 +1,22 @@
 body {
-  background-image: url('../public/phoneBG1.jpg');
-  background-size: cover;  /* Ensures the image covers the screen */
-  background-position: center;
   margin: 0;  /* Removes default margin */
-  transform: translateZ(0);
 }
 
-@media (min-width: 1024px) { 
-  body {
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/phoneBG1.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Places the pseudo-element behind other content */
+}
+
+@media (min-width: 1024px) {
+  body::before {
     background-image: url('../public/big_screen_bg.jpg');  /* Use a different image for larger screens */
   }
 }

@@ -52,7 +52,7 @@ export default function Winners(): JSX.Element {
     // Delay showing content until HyperText animation finishes
     const timeout = setTimeout(() => {
       setShowContent(true);
-    }, 2 * 1000); // 10 seconds for the HyperText animation
+    }, 0 * 1000); // 10 seconds for the HyperText animation
 
     return () => clearTimeout(timeout);
   }, []);
