@@ -1,26 +1,11 @@
 "use client";
 import * as React from "react";
 import Navbar from "@/components/Navbar";
-import { Button } from "@/components/ui/button";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 import HyperText from "@/components/ui/hyper-text";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import ShimmerButton from "@/components/ui/shimmer-button";
 
-import { cn } from "@/lib/utils";
-import AnimatedShinyText from "@/components/ui/animated-shiny-text";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerDescription,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
+import PulsatingButton from "@/components/ui/pulsating-button";
+
+
 
 import ArgonyxLogo from "@/public/poster.png";
 import AIImage from "@/public/ai_ml.png";
@@ -64,11 +49,11 @@ export default function Home() {
                   <div className="flex text-xl flex-col items-center text-center">
                     <HyperText
                       className="text-xl font-bold text-black dark:text-white"
-                      text="the registrations are closed!"
+                      text="the winners are announced!"
                       duration={10}
                     />
                   </div>
-                  <div className="flex justify-center w-full">
+                  {/* <div className="flex justify-center w-full">
                     <Drawer>
                       <DrawerTrigger asChild>
                         <div
@@ -106,7 +91,7 @@ export default function Home() {
                                         View Problem <br /> Statement 1
                                       </Button>
                                     </PopoverTrigger>
-                                    <PopoverContent >
+                                    <PopoverContent>
                                       <div className="flex flex-col items-center">
                                         <h3 className="text-md font-semibold text-center">
                                           Unified Social Engagement Tracker for
@@ -307,18 +292,11 @@ export default function Home() {
                         </DrawerHeader>
                       </DrawerContent>
                     </Drawer>
-                  </div>
+                  </div> */}
                   <div className="flex justify-center w-full pt-4">
                     {" "}
-                    <a
-                      href="https://unstop.com/hackathons/argonyx-24-rv-university-1200874"
-                      target="_blank"
-                    >
-                      <ShimmerButton className="shadow-2xl">
-                        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                          Submit PPT
-                        </span>
-                      </ShimmerButton>
+                    <a href="/winners">
+                      <PulsatingButton>View Winners</PulsatingButton>
                     </a>
                   </div>
                 </div>
