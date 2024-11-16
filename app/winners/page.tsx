@@ -5,7 +5,7 @@ import HyperText from "@/components/ui/hyper-text";
 import AIMLImage from "@/public/ai_ml.png";
 import WebDevImage from "@/public/web dev.png";
 import Image from "next/image";
-//import FadeInSection from "@/components/FadeInSection";
+import FadeInSection from "@/components/FadeInSection";
 import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
 import First from "@/public/first.png";
 import Second from "@/public/second.png";
@@ -68,13 +68,13 @@ export default function Winners(): JSX.Element {
         <p className="text-sm italic text-center mt-4"></p>
       ) : (
         <>
-          
+          <FadeInSection>
             <p className="text-sm font-serif md:text-lg italic text-center mt-4">
               Congratulations to the brilliant minds who showcased innovation
               and excellence!
             </p>
-          
-          
+          </FadeInSection>
+          <FadeInSection>
             <div className="flex flex-col items-center pt-3">
               <Image src={AIMLImage} alt="ai_logo" height={120} width={120} />
               <h2 className="text-xl font-semibold text-primary pb-2">
@@ -111,8 +111,8 @@ export default function Winners(): JSX.Element {
                 </NeonGradientCard>
               </div>
             </div>
-          
-          
+          </FadeInSection>
+          <FadeInSection>
             <div className="flex flex-col items-center pt-10">
               <Image src={WebDevImage} alt="ai_logo" height={110} width={110} />
               <h2 className="text-xl font-semibold text-primary pb-2">
@@ -149,7 +149,7 @@ export default function Winners(): JSX.Element {
                 </NeonGradientCard>
               </div>
             </div>
-          
+          </FadeInSection>
         </>
       )}
     </div>

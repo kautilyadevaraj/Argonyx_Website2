@@ -4,6 +4,7 @@ body {
   background-position: center;
   background-attachment: fixed;  /* Keeps the image fixed while scrolling */
   margin: 0;  /* Removes default margin */
+  transform: translateZ(0);
 }
 
 @media (min-width: 1024px) { 
