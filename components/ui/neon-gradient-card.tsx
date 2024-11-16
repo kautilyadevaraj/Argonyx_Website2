@@ -16,7 +16,7 @@ interface NeonColorsProps {
   secondColor: string;
 }
 
-interface NeonGradientCardProps {
+interface NeonGradientCardProps extends React.HTMLAttributes<HTMLDivElement> {
   /**
    * @default <div />
    * @type ReactElement
@@ -64,7 +64,6 @@ interface NeonGradientCardProps {
    * */
   neonColors?: NeonColorsProps;
 
-  [key: string]: any;
 }
 
 const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
