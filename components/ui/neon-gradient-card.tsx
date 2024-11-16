@@ -82,10 +82,12 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
 
   useEffect(() => {
     const updateDimensions = () => {
-      if (containerRef.current) {
-        const { offsetWidth, offsetHeight } = containerRef.current;
-        setDimensions({ width: offsetWidth, height: offsetHeight });
-      }
+      setTimeout(() => {
+        if (containerRef.current) {
+          const { offsetWidth, offsetHeight } = containerRef.current;
+          setDimensions({ width: offsetWidth, height: offsetHeight });
+        }
+      }, 0); // Delays calculation until after layout adjustments
     };
 
     updateDimensions();
@@ -95,6 +97,7 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
       window.removeEventListener("resize", updateDimensions);
     };
   }, []);
+
 
   useEffect(() => {
     if (containerRef.current) {
