@@ -74,7 +74,7 @@ export default function Winners(): JSX.Element {
               and excellence!
             </p>
           </FadeInSection>
-          <FadeInSection>
+          
             <div className="flex flex-col items-center pt-3">
               <Image src={AIMLImage} alt="ai_logo" height={120} width={120} />
               <h2 className="text-xl font-semibold text-primary pb-2">
@@ -111,7 +111,7 @@ export default function Winners(): JSX.Element {
                 </NeonGradientCard>
               </div>
             </div>
-          </FadeInSection>
+          
           <FadeInSection>
             <div className="flex flex-col items-center pt-10">
               <Image src={WebDevImage} alt="ai_logo" height={110} width={110} />
