@@ -152,7 +152,7 @@ export default function Winners(): JSX.Element {
                     </ul>
                   </div>
                 </NeonGradientCard>
-                <NeonGradientCard className="w-full items-center justify-center text-center">
+                <NeonGradientCard className="w-full md:col-span-3 items-center justify-center text-center">
                   <div className="flex flex-col items-center">
                     <h1
                       className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#FFFFFF] from-35% to-[#8A2BE2] bg-clip-text text-center text-3xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
@@ -205,7 +205,7 @@ export default function Winners(): JSX.Element {
               </h2>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-                <NeonGradientCard className="w-[265px] items-center justify-center text-center">
+                <NeonGradientCard className="w-[275px] items-center justify-center text-center">
                   <div className="flex flex-col items-center">
                     <Image src={First} alt="ai_logo" height={60} width={60} />
 
@@ -274,7 +274,7 @@ export default function Winners(): JSX.Element {
                     </ul>
                   </div>
                 </NeonGradientCard>
-                <NeonGradientCard className="w-full items-center justify-center text-center">
+                <NeonGradientCard className="w-full md:col-span-3 items-center justify-center text-center">
                   <div className="flex flex-col items-center">
                     <h1
                       className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#FFFFFF] from-35% to-[#8A2BE2] bg-clip-text text-center text-3xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
