@@ -43,9 +43,9 @@ export default function Home() {
 
             {/* Registration Info */}
 
-            <div className="flex-1 h-fit md:w-1/4 flex flex-col p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
+            <div className="flex-1 h-fit md:w-1/4 flex flex-col items-center p-4  md:p-5 rounded-lg md:m-5 space-y-3  p-5 rounded-lg space-y-3 md:bg-background/95 md:backdrop-blur-xs md:supports-[backdrop-filter]:bg-custom-bg/70">
               <div className="w-full flex justify-evenly">
-                <div className="flex flex-col justify-center items-start">
+                <div className="flex flex-col justify-center items-center">
                   <div className="flex text-xl flex-col items-center text-center">
                     <HyperText
                       className="text-xl font-bold text-black dark:text-white"
@@ -293,10 +293,17 @@ export default function Home() {
                       </DrawerContent>
                     </Drawer>
                   </div> */}
-                  <div className="flex justify-center w-full pt-4">
+                  <div className="flex justify-center w-full">
                     {" "}
                     <a href="/winners">
                       <PulsatingButton>View Winners</PulsatingButton>
+                    </a>
+                  </div>
+                  <div className="flex flex-col justify-center items-center w-full pt-4">
+                    {" "}
+                    <h1>Give us your feedback regarding the event!</h1>
+                    <a href="https://forms.gle/3fpMHUHgRxG8CPDP8" target="_blank" className="pt-2">
+                      <PulsatingButton>Feedback Form</PulsatingButton>
                     </a>
                   </div>
                 </div>

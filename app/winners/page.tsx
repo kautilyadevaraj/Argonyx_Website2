@@ -123,8 +123,6 @@ export default function Winners(): JSX.Element {
                       <div className="flex flex-col items-center">
                         <li>Bommireddy C Nishant Reddy</li>
                         <li>Dhanush S Gowda</li>
-
-                        <li>Ankur TS</li>
                         <li>Shayan Azmi</li>
                       </div>
                     </ul>
@@ -152,6 +150,48 @@ export default function Winners(): JSX.Element {
                         <li>Mohammed Amaan Thayyil</li>
                       </div>
                     </ul>
+                  </div>
+                </NeonGradientCard>
+                <NeonGradientCard className="w-full items-center justify-center text-center">
+                  <div className="flex flex-col items-center">
+                    <h1
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#FFFFFF] from-35% to-[#8A2BE2] bg-clip-text text-center text-3xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+
+
+"
+                    >
+                      Consolation Prizes
+                    </h1>
+                    <h1
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#4B0082] from-35% to-[#D8BFD8] bg-clip-text text-center text-2xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      Best Web Scraping
+                    </h1>
+                    <Image src={Trophy} alt="ai_logo" height={60} width={60} />
+
+                    <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+                      Team Gitbashers
+                    </h1>
+                    <h4
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      RVCE
+                    </h4>
+                    <ul className="pt-2">
+                      <div className="flex flex-col items-center">
+                        <li>Harshit Saroha</li>
+                        <li>Akshat Arya</li>
+
+                        <li>Amol Vyas</li>
+                        <li>Akshat Gupta</li>
+                      </div>
+                    </ul>
+                    
+
+
+                    
                   </div>
                 </NeonGradientCard>
               </div>
@@ -267,7 +307,6 @@ export default function Winners(): JSX.Element {
                         <li>Suhani Lalla</li>
 
                         <li>Avishi Sarda</li>
-                        <li>Pavan C Shekar</li>
                       </div>
                     </ul>
                     <h1
