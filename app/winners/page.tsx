@@ -87,16 +87,20 @@ export default function Winners(): JSX.Element {
                     <Image src={First} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Team Name
+                      Team_MFSS
                     </h1>
+                    <h4
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      RV University
+                    </h4>
                     <ul className="pt-2">
-                      <div className="flex space-x-3">
-                        <li>Member 1</li>
-                        <li>Member 2</li>
-                      </div>
-                      <div className="flex space-x-3">
-                        <li>Member 3</li>
-                        <li>Member 4</li>
+                      <div className="flex flex-col items-center">
+                        <li>Francis Maria Sharan</li>
+                        <li>Shreyank SH</li>
+
+                        <li>Saatvik B Hampiholi</li>
                       </div>
                     </ul>
                   </div>
@@ -106,16 +110,21 @@ export default function Winners(): JSX.Element {
                     <Image src={Second} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Team Name
+                      OriginDev
                     </h1>
+                    <h4
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      RV University
+                    </h4>
                     <ul className="pt-2">
-                      <div className="flex space-x-3">
-                        <li>Member 1</li>
-                        <li>Member 2</li>
-                      </div>
-                      <div className="flex space-x-3">
-                        <li>Member 3</li>
-                        <li>Member 4</li>
+                      <div className="flex flex-col items-center">
+                        <li>Bommireddy C Nishant Reddy</li>
+                        <li>Dhanush S Gowda</li>
+
+                        <li>Ankur TS</li>
+                        <li>Shayan Azmi</li>
                       </div>
                     </ul>
                   </div>
@@ -125,16 +134,21 @@ export default function Winners(): JSX.Element {
                     <Image src={Third} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Team Name
+                      OkComputer
                     </h1>
+                    <h4
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      Christ University
+                    </h4>
                     <ul className="pt-2">
-                      <div className="flex space-x-3">
-                        <li>Member 1</li>
-                        <li>Member 2</li>
-                      </div>
-                      <div className="flex space-x-3">
-                        <li>Member 3</li>
-                        <li>Member 4</li>
+                      <div className="flex flex-col items-center">
+                        <li>Ansul Kumar</li>
+                        <li>Alderin Shanty</li>
+
+                        <li>Akhil Ramchand</li>
+                        <li>Mohammed Amaan Thayyil</li>
                       </div>
                     </ul>
                   </div>
@@ -150,21 +164,23 @@ export default function Winners(): JSX.Element {
               </h2>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-                <NeonGradientCard className="max-w-sm items-center justify-center text-center">
+                <NeonGradientCard className="w-[265px] items-center justify-center text-center">
                   <div className="flex flex-col items-center">
                     <Image src={First} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Team Name
+                      O (Win)
                     </h1>
+                    <h4 className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+                      BMSCE
+                    </h4>
                     <ul className="pt-2">
-                      <div className="flex space-x-3">
-                        <li>Member 1</li>
-                        <li>Member 2</li>
-                      </div>
-                      <div className="flex space-x-3">
-                        <li>Member 3</li>
-                        <li>Member 4</li>
+                      <div className="flex flex-col items-center">
+                        <li>K Vijay</li>
+                        <li>Shashidhar BM</li>
+
+                        <li>K Mohamad Hussain</li>
+                        <li>GRVS Sai Suveer</li>
                       </div>
                     </ul>
                   </div>
@@ -174,16 +190,21 @@ export default function Winners(): JSX.Element {
                     <Image src={Second} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Team Name
+                      MIPA BYTES
                     </h1>
+                    <h4
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      RVCE
+                    </h4>
                     <ul className="pt-2">
-                      <div className="flex space-x-3">
-                        <li>Member 1</li>
-                        <li>Member 2</li>
-                      </div>
-                      <div className="flex space-x-3">
-                        <li>Member 3</li>
-                        <li>Member 4</li>
+                      <div className="flex flex-col items-center">
+                        <li>Joseph Rejo Mathew</li>
+                        <li>Sreeharsha Tallapalli</li>
+
+                        <li>Sai Arun Kumar</li>
+                        <li>Ishan Shekhar Prasad </li>
                       </div>
                     </ul>
                   </div>
@@ -193,16 +214,21 @@ export default function Winners(): JSX.Element {
                     <Image src={Third} alt="ai_logo" height={60} width={60} />
 
                     <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                      Team Name
+                      HackAttack
                     </h1>
+                    <h4
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      REVA
+                    </h4>
                     <ul className="pt-2">
-                      <div className="flex space-x-3">
-                        <li>Member 1</li>
-                        <li>Member 2</li>
-                      </div>
-                      <div className="flex space-x-3">
-                        <li>Member 3</li>
-                        <li>Member 4</li>
+                      <div className="flex flex-col items-center">
+                        <li>Rijo Simon TM</li>
+                        <li>Mohith N</li>
+
+                        <li>S Sandeep Kumar</li>
+                        <li>Pavan C Shekar</li>
                       </div>
                     </ul>
                   </div>
