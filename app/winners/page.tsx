@@ -10,6 +10,7 @@ import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
 import First from "@/public/first.png";
 import Second from "@/public/second.png";
 import Third from "@/public/third.png";
+import Trophy from "@/public/trophy.png";
 
 export default function Winners(): JSX.Element {
   const [showContent, setShowContent] = useState(false);
@@ -229,6 +230,70 @@ export default function Winners(): JSX.Element {
 
                         <li>S Sandeep Kumar</li>
                         <li>Pavan C Shekar</li>
+                      </div>
+                    </ul>
+                  </div>
+                </NeonGradientCard>
+                <NeonGradientCard className="w-full items-center justify-center text-center">
+                  <div className="flex flex-col items-center">
+                    <h1
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#FFFFFF] from-35% to-[#8A2BE2] bg-clip-text text-center text-3xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+
+
+"
+                    >
+                      Consolation Prizes
+                    </h1>
+                    <h1
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#4B0082] from-35% to-[#D8BFD8] bg-clip-text text-center text-2xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      Excellent Frontend
+                    </h1>
+                    <Image src={Trophy} alt="ai_logo" height={60} width={60} />
+
+                    <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+                      Scriptify
+                    </h1>
+                    <h4
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      RV University
+                    </h4>
+                    <ul className="pt-2">
+                      <div className="flex flex-col items-center">
+                        <li>Saanvi R Prabhu</li>
+                        <li>Suhani Lalla</li>
+
+                        <li>Avishi Sarda</li>
+                        <li>Pavan C Shekar</li>
+                      </div>
+                    </ul>
+                    <h1
+                      className="pointer-events-none pt-4 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#4B0082] from-35% to-[#D8BFD8] bg-clip-text text-center text-2xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      Excellent Features
+                    </h1>
+                    <Image src={Trophy} alt="ai_logo" height={60} width={60} />
+
+                    <h1 className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+                      HAC
+                    </h1>
+                    <h4
+                      className="pointer-events-none pt-2 z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#8A2BE2] from-35% to-[#FFFFFF] bg-clip-text text-center text-sm font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]
+"
+                    >
+                      MSRIT
+                    </h4>
+                    <ul className="pt-2">
+                      <div className="flex flex-col items-center">
+                        <li>Chitrita BS</li>
+                        <li>Chirudeep Kuralla</li>
+
+                        <li>Harshith Bezawada</li>
+                        <li>Adithya B</li>
                       </div>
                     </ul>
                   </div>
